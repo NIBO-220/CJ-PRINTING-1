@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CJ PRINTINGS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CJ PRINTINGS</h1>
+    <nav>
+      <a href="#shop">Shop Now</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <div class="cart-icon" id="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="shop" class="product-grid">
+      <div class="product-card" data-name="T-Shirt" data-price="15">
+        <img src="images/OIP (27).webp" alt="T-Shirt" />
+        <h2>Custom T-Shirt</h2>
+        <p>High-quality printed T-shirts. $15</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="product-card" data-name="Mug" data-price="10">
+        <img src="images/OIP (28).webp" alt="Mug" />
+        <h2>Printed Mug</h2>
+        <p>Personalized mugs. $10</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="product-card" data-name="Poster" data-price="8">
+        <img src="images/download (9) - Copy.webp" alt="Poster" />
+        <h2>Custom Poster</h2>
+        <p>Glossy posters for events. $8</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>We specialize in custom printing: T-shirts, mugs, posters, flyers, and more.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: cjprintings@example.com</p>
+      <p>Phone: +27 71 746 1515</p>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer">
+    <button id="close-cart" class="close-cart">✖</button>
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: $0.00</p>
+    <div id="paypal-button-container"></div>
+    <button id="checkout">Checkout</button>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 CJ PRINTINGS. All rights reserved.</p>
+  </footer>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAx7dsqtJ81FmuPmPBtqU6KiEWBFcwwDjbb9Leyr8h7c7qgEQD1CC-h8s6pvB0-2G5WIyKSefoiV-f-3E&currency=USD"></script>
+  <script src="script.js"></script>
+</body>
+</html>
